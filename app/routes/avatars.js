@@ -11,6 +11,7 @@ export default Ember.Route.extend({
               avatar.fullName = avatar.full_name;
               avatar.login = avatar.owner['login'];
               avatar.avatarUrl = avatar.owner['avatar_url'];
+              avatar.url = avatar.owner['html_url'];
             });
             return avatars;
         });

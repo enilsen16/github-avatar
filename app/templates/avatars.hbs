@@ -1,15 +1,15 @@
 <section>
   <div class="container">
     <div class="row">
-  {{#each}}
-      <div class="col-md-6">
+      {{#each}}
+      <div class="col-md-1">
         <p>
-          The full name: {{fullName}} <br>
-          The username: {{login}} <br>
-          <img src={{avatarUrl}} width="257" height="257" />
+          <a href={{url}} class="thumbnail">
+            <img src={{avatarUrl}} width="70" height="70" />
+          </a>
         </p>
       </div>
-  {{/each}}
+      {{/each}}
     </div>
   </div>
 </section>
