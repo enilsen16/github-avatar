@@ -5,6 +5,8 @@ var Router = Ember.Router.extend({
   location: config.locationType
 });
 
-export default Router.map(function() {
-  this.resource('avatars', { path: '/' });
+Router.map(function() {
+  this.route('avatars', { path: '/' });
 });
+
+export default Router;
