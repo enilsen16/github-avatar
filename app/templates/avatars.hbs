@@ -1,11 +1,15 @@
-
-
 <section>
+  <div class="container">
+    <div class="row">
   {{#each}}
-  <p class="container">
-    The full name: {{full_name}} <br>
-    The username: {{login}} <br>
-    <img src={{avatar_url}} width="257" height="257" />
-  </p>
+      <div class="col-md-6">
+        <p>
+          The full name: {{fullName}} <br>
+          The username: {{login}} <br>
+          <img src={{avatarUrl}} width="257" height="257" />
+        </p>
+      </div>
   {{/each}}
+    </div>
+  </div>
 </section>
